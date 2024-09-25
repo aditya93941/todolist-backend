@@ -15,7 +15,7 @@ app.use(cors());
 
 let db = null;
 
-const initializingServer = async () => {
+const initializeServer = async () => {
     try {
         db = await open({
             filename: dbPath,
@@ -30,7 +30,7 @@ const initializingServer = async () => {
     }
 };
 
-initializingServer();
+initializeServer();
 
 app.post('/auth/signup', async (req, res) => {
     const { name, email, password } = req.body;
