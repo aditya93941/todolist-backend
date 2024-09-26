@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 const cors = require('cors');
 
-const dbPath = path.join(__dirname, "data.db");
+const dbPath = path.join(__dirname, "taskdata.db");
 
 const app = express();
 app.use(express.json());
